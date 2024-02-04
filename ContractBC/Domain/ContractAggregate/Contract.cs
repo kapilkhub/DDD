@@ -7,6 +7,10 @@ namespace ContractBC.ContractAggregate;
 
 public class Contract : BaseEntity<Guid>
 {
+    private Contract()
+    {
+        
+    }
     public Contract(DateOnly initDate, List<Author> authors, string workingTitle)
     {
         _initiated = initDate;

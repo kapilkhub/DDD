@@ -8,6 +8,7 @@ namespace ContractBC.ContractAggregate;
 
 public class ContractVersion:BaseEntity<Guid>
 {
+    private ContractVersion() { }
     public static ContractVersion CreateNew(BaseAttributes attribs)
     {
         return new ContractVersion(GetDefaultSpecs(),attribs, null,false);
